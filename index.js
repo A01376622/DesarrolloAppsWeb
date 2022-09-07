@@ -14,10 +14,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'index.html'))
 });
 
-app.get('/about-me', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'about.html'))
-});
-
 //Lanzar la app
 app.listen(PORT,()=>{
     console.log("servidor en línea");
